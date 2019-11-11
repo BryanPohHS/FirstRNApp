@@ -25,7 +25,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
-  console.log('Testing console staement');
+  console.log('Welcome to C308 Lesson 04 quiz!');
+  console.log('Your component here');
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -33,7 +34,7 @@ const App: () => React$Node = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header/>
+
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
               <Text style={styles.footer}>Engine: Hermes</Text>
@@ -41,25 +42,12 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text> Welcome to C308 Web Frameworks </Text>
-              <Text style={styles.sectionTitle}>LESSON ONE</Text>
+              <Text style={styles.sectionTitle}>Setup Pickup Time</Text>
               <Text style={styles.sectionDescription}>
-                I <Text style={styles.highlight}>LOVE</Text> C308 module.
+                Set a time you would like us to arrive at your pickup location.
               </Text>
+              <Text style={styles.highlight}>RP Furniture Shop</Text>
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>My Name is Bryan</Text>
-              <Text style={styles.sectionDescription}>
-                <Text> My class in W64N</Text>
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>This is my team for c308</Text>
-              <Text style={styles.sectionDescription}>
-                I am from team 5
-              </Text>
-            </View>
-
           </View>
         </ScrollView>
       </SafeAreaView>
